@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.2"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="automat.ApplicationController">
+    <Tab text="Split">
+        <fx:include source="split-view.fxml"/>
+    </Tab>
+    <Tab text="Grid mit Prozent">
+        <fx:include source="grid-test-view.fxml"/>
+    </Tab>
+    <Tab text="Grid verschachtelt">
+        <fx:include source="grid-test-level1-view.fxml"/>
+    </Tab>
+</TabPane>

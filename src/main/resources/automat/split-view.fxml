@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.7" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <SplitPane dividerPositions="0.65" orientation="VERTICAL" prefHeight="800.0" prefWidth="600.0">
+        <fx:include source="manufacturer-view.fxml"/>
+        <fx:include source="products-view.fxml"/>
+    </SplitPane>
+    <fx:include source="logging-view.fxml"/>
+</SplitPane>
