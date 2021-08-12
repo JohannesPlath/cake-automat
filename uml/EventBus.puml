@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+participant LoggingController
+participant ManufacturerController
+participant LoggingEvent
+
+LoggingController -> EventBus: register(LoggingEvent.LOG, this)
+
+ManufacturerController -> LoggingEvent: new LoggingEvent(LoggingEvent.LOG, "mesagge")
+ManufacturerController -> EventBus: dispatch LoggingEvent
+EventBus -> EventBus: look for LoggingEvent listeners
+EventBus -> LoggingController: handle( LoggingEvent )
+
+@enduml
